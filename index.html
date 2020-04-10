@@ -52,8 +52,8 @@
 	<link rel="preconnect" href="https://syndication.twitter.com">
 
 	<link rel="preload" href="https://platform.twitter.com/widgets.js" as="script">
-	<link rel="preload" href="./assets/css/style.min.css?v=1.0.03" as="style">
-	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.03">
+	<link rel="preload" href="./assets/css/style.min.css?v=1.0.04" as="style">
+	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.04">
 </head>
 
 <body>
@@ -103,7 +103,7 @@
 
 		<div class="main">
 			<div class="section" style="padding:0px;">
-				<div class="container">								
+				<div class="container">
 
 					<!-- Key Features -->
 					<div class="row">
@@ -171,7 +171,6 @@
 							</div> <!-- end of row -->
 						</div> <!-- end of col-12 -->
 
-
 						<!-- external links (top) -->
 						<div class="col-md-12 ml-auto mr-auto">
 							<ul role="list" class="social-links d-flex justify-content-center flex-wrap" style="margin-top:60px;">
@@ -211,7 +210,6 @@
 								</li>
 							</ul>
 						</div>
-
 					</div> <!-- end of row -->
 
 					<!-- Code Examples -->
@@ -322,13 +320,44 @@ study.optimize(objective, n_trials=100)
 
 study.best_params  # E.g. {'x': 2.002108042}</code></pre>
 													<p class="space-top" style="margin-top:0px;">
-														<a href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
+														<a class="d-inline-flex" href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
 															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'quickstart-colab'});">
-															<span style="position:absolute;z-index:-1;opacity:0;">colab.research.google</span>
-															<img class="b-lazy"
-																src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-																data-src="https://colab.research.google.com/assets/colab-badge.svg" style="width:150px"
-																alt="">
+															<span class="sr-only">colab.research.google</span>
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																width="150" height="26">
+																<linearGradient id="b" x2="0" y2="100%">
+																	<stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+																	<stop offset="1" stop-opacity=".1" />
+																</linearGradient>
+																<clipPath id="a">
+																	<rect width="117" height="20" rx="3" fill="#fff" />
+																</clipPath>
+																<g clip-path="url(#a)">
+																	<path fill="#555" d="M0 0h30v20H0z" />
+																	<path fill="#007ec6" d="M30 0h87v20H30z" />
+																	<path fill="url(#b)" d="M0 0h117v20H0z" />
+																</g>
+																<g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif"
+																	font-size="110">
+																	<svg x="4px" y="0px" width="22px" height="20px" viewBox="-2 0 28 24"
+																		style="background-color: #fff;border-radius: 1px;">
+																		<path style="fill:#ef9008;"
+																			d="M1.977,16.77c-2.667-2.277-2.605-7.079,0-9.357C2.919,8.057,3.522,9.075,4.49,9.691c-1.152,1.6-1.146,3.201-0.004,4.803C3.522,15.111,2.918,16.126,1.977,16.77z" />
+																		<path style="fill:#fdba18;"
+																			d="M12.257,17.114c-1.767-1.633-2.485-3.658-2.118-6.02c0.451-2.91,2.139-4.893,4.946-5.678c2.565-0.718,4.964-0.217,6.878,1.819c-0.884,0.743-1.707,1.547-2.434,2.446C18.488,8.827,17.319,8.435,16,8.856c-2.404,0.767-3.046,3.241-1.494,5.644c-0.241,0.275-0.493,0.541-0.721,0.826C13.295,15.939,12.511,16.3,12.257,17.114z" />
+																		<path style="fill:#ef9008;"
+																			d="M19.529,9.682c0.727-0.899,1.55-1.703,2.434-2.446c2.703,2.783,2.701,7.031-0.005,9.764c-2.648,2.674-6.936,2.725-9.701,0.115c0.254-0.814,1.038-1.175,1.528-1.788c0.228-0.285,0.48-0.552,0.721-0.826c1.053,0.916,2.254,1.268,3.6,0.83C20.502,14.551,21.151,11.927,19.529,9.682z" />
+																		<path style="fill:#fdba18;"
+																			d="M4.49,9.691C3.522,9.075,2.919,8.057,1.977,7.413c2.209-2.398,5.721-2.942,8.476-1.355c0.555,0.32,0.719,0.606,0.285,1.128c-0.157,0.188-0.258,0.422-0.391,0.631c-0.299,0.47-0.509,1.067-0.929,1.371C8.933,9.539,8.523,8.847,8.021,8.746C6.673,8.475,5.509,8.787,4.49,9.691z" />
+																		<path style="fill:#fdba18;"
+																			d="M1.977,16.77c0.941-0.644,1.545-1.659,2.509-2.277c1.373,1.152,2.85,1.433,4.45,0.499c0.332-0.194,0.503-0.088,0.673,0.19c0.386,0.635,0.753,1.285,1.181,1.89c0.34,0.48,0.222,0.715-0.253,1.006C7.84,19.73,4.205,19.188,1.977,16.77z" />
+																	</svg>
+																	<text x="245" y="140" transform="scale(.1)" textLength="30"></text>
+																	<text x="725" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)"
+																		textLength="770">Open in Colab</text>
+																	<text x="725" y="140" transform="scale(.1)" textLength="770">Open in Colab</text>
+																</g>
+															</svg>
 														</a></p>
 												</div>
 											</div>
@@ -706,7 +735,8 @@ study.optimize(objective, n_trials=100)</code></pre>
 ...
 plot_intermediate_values(study)</code></pre>
 													<div class="text-center">
-														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/img/intermediate-values-graph.png"
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="assets/img/intermediate-values-graph.png"
 															data-srcset="assets/img/intermediate-values-graph@2x.png 2x" style="width:60%"
 															class="card-top-shadow text-center b-lazy" alt="">
 													</div>
@@ -1015,7 +1045,7 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 		<symbol id="icon-rocket" viewBox="0 0 1792 1792">
 			<path fill="#123692"
 				d="M1504 448q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm224-288q0 249-75.5 430.5t-253.5 360.5q-81 80-195 176l-20 379q-2 16-16 26l-384 224q-7 4-16 4-12 0-23-9l-64-64q-13-14-8-32l85-276-281-281-276 85q-3 1-9 1-14 0-23-9l-64-64q-17-19-5-39l224-384q10-14 26-16l379-20q96-114 176-195 188-187 358-258t431-71q14 0 24 9.5t10 22.5z" />
-		</symbol>	
+		</symbol>
 		<symbol id="icon-github" viewBox="0 0 16 16">
 			<path fill="currentColor" fill-rule="evenodd"
 				d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
@@ -1036,12 +1066,13 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 	<!-- svg sprites -->
 
 	<!-- Core JS Files -->
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script defer src="./assets/js/prism.js"></script>
-	<script defer src="./assets/js/popper.min.js"></script>
-	<script defer src="./assets/js/bootstrap.min.js"></script>
+	<script defer src="./assets/js/paper-kit.min.js?v=2.1.0"></script>
 	<script defer src="./assets/js/blazy.min.js"></script>
-	<script defer src="./assets/js/scripts.js?v=1.0.03"></script>
+	<script defer src="./assets/js/scripts.js?v=1.0.04"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55135190-8"></script>
