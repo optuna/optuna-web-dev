@@ -59,7 +59,7 @@ $(document).ready(function(){
     $('[data-toggle="switch"]').bootstrapSwitch();
 
     // Navbar color change on scroll
-    if($('.navbar[color-on-scroll]').length != 0){
+    if($('.navbar[data-color-scroll]').length != 0){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)
     }
 
@@ -135,16 +135,16 @@ pk = {
     }, 4),
 
     checkScrollForTransparentNavbar: debounce(function() {
-        	if($(document).scrollTop() + 200 > $(".navbar").attr("color-on-scroll") ) {
+        	if($(document).scrollTop() + 200 > $(".navbar").attr("data-color-scroll") ) {
                 if(transparent) {
                     transparent = false;
-                    // $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
+                    // $('.navbar[data-color-scroll]').removeClass('navbar-transparent');
                     // $('#header_logo').attr('src', './assets/img/PFN_logo.png');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    // $('.navbar[color-on-scroll]').addClass('navbar-transparent');
+                    // $('.navbar[data-color-scroll]').addClass('navbar-transparent');
                     // $('#header_logo').attr('src', './assets/img/PFN_logo_white.png');
                 }
             }

@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
 	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/optuna.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+	<!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <![endif]-->
 
 	<title>Optuna - A hyperparameter optimization framework</title>
-	<link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="./assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
-	<link href="./assets/css/demo.css" rel="stylesheet" />
-	<link href="./assets/css/prism.css" rel="stylesheet" />
-	<link href="./assets/css/prism-lite.css" rel="stylesheet" />
-	<script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
-
-	<meta name="description" content="Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning.">
-
+	<meta name="description"
+		content="Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning.">
 	<meta property="og:site_name" content="Optuna">
 	<meta property="og:title" content="Optuna - A hyperparameter optimization framework">
-	<meta property="og:description" content="Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning. It features an imperative, define-by-run style user API. ">
+	<meta property="og:description"
+		content="Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning. It features an imperative, define-by-run style user API. ">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://optuna.org/">
 	<meta property="og:image" content="https://optuna.org/assets/img/optuna-logo.png">
@@ -29,74 +24,103 @@
 	<meta name="twitter:site" content="https://optuna.org/">
 	<meta name="twitter:image" content="https://optuna.org/assets/img/optuna-logo.png">
 
+	<link rel="dns-prefetch" href="https://www.youtube.com">
+	<link rel="dns-prefetch" href="https://yt3.ggpht.com">
+	<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net">
+	<link rel="dns-prefetch" href="https://i.ytimg.com">
+	<link rel="dns-prefetch" href="https://static.doubleclick.net">
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+	<link rel="dns-prefetch" href="https://use.fontawesome.com">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="dns-prefetch" href="https://ton.twimg.com">
+	<link rel="dns-prefetch" href="https://pbs.twimg.com">
+	<link rel="dns-prefetch" href="https://cdn.syndication.twimg.com">
+	<link rel="dns-prefetch" href="https://syndication.twitter.com">
 
-	<!--     Fonts and icons     -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,300,700|Work+Sans|Material+Icons' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://www.youtube.com">
+	<link rel="preconnect" href="https://yt3.ggpht.com">
+	<link rel="preconnect" href="https://googleads.g.doubleclick.net">
+	<link rel="preconnect" href="https://i.ytimg.com">
+	<link rel="preconnect" href="https://static.doubleclick.net">
+	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+	<link rel="preconnect" href="https://use.fontawesome.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://ton.twimg.com">
+	<link rel="preconnect" href="https://pbs.twimg.com">
+	<link rel="preconnect" href="https://cdn.syndication.twimg.com">
+	<link rel="preconnect" href="https://syndication.twitter.com">
 
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
-	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<link rel="preload" href="https://platform.twitter.com/widgets.js" as="script">
+	<link rel="preload" href="./assets/css/style.min.css?v=1.0.01" as="style">
+	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.01">
 </head>
+
 <body>
 
-	<!-- <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="450"> -->
-	<nav class="navbar navbar-expand-lg fixed-top" color-on-scroll="450">
-
+	<nav class="navbar navbar-expand-lg fixed-top" data-color-scroll="450">
 		<div class="container">
 			<div class="navbar-translate">
-				<a class="navbar-brand" href="https://optuna.org/"><h1 style="font-size:32px;margin:0;padding:0; font-weight:300;"><img src="./assets/img/optuna-logo.png" id="header_logo" style="width:230px; margin-top:-10px;" alt="Optuna Logo"></h1></a>
+				<a class="navbar-brand" href="https://optuna.org/">
+					<h1 style="font-size:32px;margin:0;padding:0; font-weight:300;"><img class="b-lazy"
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							data-src="./assets/img/optuna-logo.png"
+							data-srcset="./assets/img/optuna-logo@2x.png 2x, ./assets/img/optuna-logo@3x.png 3x" id="header_logo"
+							style="width:230px; margin-top:-10px;" alt="Optuna Logo"></h1>
+				</a>
 
-				<button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse"
+					data-target="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-bar"></span>
 					<span class="navbar-toggler-bar"></span>
 					<span class="navbar-toggler-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="#key_features" class="header_link"> Key Features</a></li>
-					<li class="nav-item"><a href="#code_examples" class="header_link"> Code Examples</a></li>
-					<li class="nav-item"><a href="#installation" class="header_link"> Installation</a></li>
-					<li class="nav-item"><a href="#blog" class="header_link"> Blog</a></li>
-					<li class="nav-item"><a href="#video" class="header_link"> Videos</a></li>
-					<li class="nav-item"><a href="#paper" class="header_link"> Paper</a></li>
+				<ul class="navbar-nav ml-auto" role="list">
+					<li class="nav-item" role="listitem"><a href="#key_features" class="header_link"> Key Features</a></li>
+					<li class="nav-item" role="listitem"><a href="#code_examples" class="header_link"> Code Examples</a></li>
+					<li class="nav-item" role="listitem"><a href="#installation" class="header_link"> Installation</a></li>
+					<li class="nav-item" role="listitem"><a href="#blog" class="header_link"> Blog</a></li>
+					<li class="nav-item" role="listitem"><a href="#video" class="header_link"> Videos</a></li>
+					<li class="nav-item" role="listitem"><a href="#paper" class="header_link"> Paper</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="wrapper">
-
-
-		<div class="page-header page-header-small" style="background-image: url('./assets/img/bg.jpg');">
+		<div class="page-header page-header-small b-lazy" data-src="assets/img/bg.jpg">
 			<div class="container">
 				<div class="filter"></div>
 				<div class="motto">
 					<h1 style="padding-top:55px; font-weight:bold; font-size:3em;">Optimize Your Optimization</h1>
-					<p style="padding-top:10px;">An open source hyperparameter optimization framework to automate hyperparameter search</p>
+					<p style="padding-top:10px;">An open source hyperparameter optimization framework to automate hyperparameter
+						search</p>
 				</div>
 			</div>
 		</div>
-
 		<div class="main">
 			<div class="section" style="padding:0px;">
 				<div class="container">
 
-
 					<!-- Key Features -->
 					<div class="row">
 						<div class="col-md-12 ml-auto mr-auto">
-							<h2 class="text-center" id="key_features" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Key Features</h2>
+							<h2 class="text-center" id="key_features"
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Key
+								Features</h2>
 
 							<div class="row">
 								<div class="col-md-4">
 									<div class="card card-blog card-top-shadow">
 										<div class="card-body" style="min-height: 250px;">
-											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">Eager search spaces</h2>
-												<div class="card-image text-center">
-													<img class="img img-raised" src="https://icongr.am/fontawesome/expand.svg?color=123692" style="width:17%; margin:5px 0; padding: 5px 0;">
-												</div>
+											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">Eager search
+												spaces</h2>
+											<div class="card-image text-center">
+												<img class="img img-raised b-lazy"
+													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="https://icongr.am/fontawesome/expand.svg?color=123692"
+													style="width:17%; margin:5px 0; padding: 5px 0;" alt="">
+											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Automated search for optimal hyperparameters using Python conditionals, loops, and syntax
 											</p>
@@ -107,9 +131,13 @@
 								<div class="col-md-4">
 									<div class="card card-blog card-top-shadow">
 										<div class="card-body" style="min-height: 250px;">
-											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">State-of-the-art algorithms</h2>
+											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">State-of-the-art
+												algorithms</h2>
 											<div class="card-image text-center">
-												<img class="img img-raised" src="https://icongr.am/fontawesome/rocket.svg?color=123692" style="width:17%; margin:5px 0; padding: 5px 0;">
+												<img class="img img-raised b-lazy"
+													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="https://icongr.am/fontawesome/rocket.svg?color=123692"
+													style="width:17%; margin:5px 0; padding: 5px 0;" alt="">
 											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Efficiently search large spaces and prune unpromising trials for faster results
@@ -121,9 +149,12 @@
 								<div class="col-md-4">
 									<div class="card card-blog card-top-shadow">
 										<div class="card-body" style="min-height: 250px;">
-											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">Easy parallelization</h2>
+											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">Easy
+												parallelization</h2>
 											<div class="card-image text-center">
-												<img class="img img-raised" src="./assets/img/large_scale.png" style="width:20%; margin:5px 0;">
+												<img class="img img-raised b-lazy"
+													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="./assets/img/large_scale.png" style="width:20%; margin:5px 0;" alt="">
 											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Parallelize hyperparameter searches over multiple threads or processes without modifying code
@@ -132,60 +163,126 @@
 									</div>
 								</div>
 
-							</div>  <!-- end of row -->
-						</div>  <!-- end of col-12 -->
+							</div> <!-- end of row -->
+						</div> <!-- end of col-12 -->
 
 						<!-- external links (top) -->
 						<div class="col-md-12 ml-auto mr-auto">
-							<ul id="icons-links" class="text-center" style="margin-top:60px;">
-								<a href="https://github.com/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':  'github-top'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff"> Github<div class="ripple-container"></div></button></a>
-								<a href="https://optuna.readthedocs.io/en/stable/tutorial/index.html" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-top'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/code.svg?size=30&color=ffffff"> Tutorials<div class="ripple-container"></div></button></a>
-								<a href="https://twitter.com/OptunaAutoML" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-top'});"><button class="btn btn-primary"><img src="./assets/img/twitter-logo-circle.svg" height="30"> Twitter<div class="ripple-container"></div></button></a>
-								<a href="https://gitter.im/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'gitter-top'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff"> Gitter<div class="ripple-container"></div></button></a>
+							<ul role="list" class="social-links d-flex justify-content-center flex-wrap" style="margin-top:60px;">
+								<li role="listitem">
+									<a class="btn btn-primary" href="https://github.com/optuna/optuna"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':  'github-top'});">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+										Github<div class="ripple-container"></div>
+									</a>
+								</li>
+								<li role="listitem"><a class="btn btn-primary"
+										href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-top'});">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt="">
+										Tutorials<div class="ripple-container"></div>
+									</a>
+								</li>
+								<li role="listitem"><a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-top'});">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
+											class="ripple-container">
+										</div>
+									</a>
+								</li>
+								<li role="listitem"><a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'gitter-top'});">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter
+										<div class="ripple-container"></div>
+									</a>
+								</li>
 							</ul>
 						</div>
 
-					</div>  <!-- end of row -->
+					</div> <!-- end of row -->
 
 					<!-- Code Examples -->
 					<div class="row">
 						<div class="col-md-12 ml-auto mr-auto" id="code-examples">
 
-							<h2 class="text-center" id="code_examples" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Code Examples</h2>
+							<h2 class="text-center" id="code_examples"
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Code
+								Examples</h2>
 							<div class="profile-tabs" style="margin:0px;">
 
 								<div class="nav-tabs-navigation  col-md-12 ml-auto mr-auto">
 									<div class="nav-tabs-wrapper">
 										<ul id="tabs" class="nav nav-tabs" role="tablist">
-											<li class="nav-item ">
-												<a class="nav-link nav-link-narrow active" href="#code_quickstart" data-toggle="tab" role="tab" aria-selected="true"><img class="tablist-icon" src="./assets/img/favicon.ico" height="20"> <span class="tablist-text">Quick Start</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow active" href="#code_quickstart" data-toggle="tab" role="tab"
+													aria-selected="true"><img class="tablist-icon tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/favicon.ico" alt="">
+													<span class="tablist-text">Quick Start</span></a>
 											</li>
-											<li class="nav-item ">
-												<a class="nav-link nav-link-narrow" href="#code_PyTorch" data-toggle="tab" role="tab" aria-selected="false"><span class="iconify tablist-icon" data-icon="logos-pytorch" data-inline="false" height="20"></span> <span class="tablist-text">PyTorch</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_PyTorch" data-toggle="tab" role="tab"
+													aria-selected="false">
+													<span class="iconify tablist-icon tablist-icon-h20" data-icon="logos-pytorch"
+														data-inline="false"></span>
+													<span class="tablist-text">PyTorch</span>
+												</a>
 											</li>
-											<li class="nav-item ">
-												<a class="nav-link nav-link-narrow" href="#code_chainer" data-toggle="tab" role="tab" aria-selected="false"><img class="tablist-icon" src="./assets/img/chainer_icon_red.png" height="20"> <span class="tablist-text">Chainer</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_chainer" data-toggle="tab" role="tab"
+													aria-selected="false"><img class="tablist-icon tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/chainer_icon_red.png" alt=""> <span
+														class="tablist-text">Chainer</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_tensorflow" data-toggle="tab" role="tab" aria-selected="false"><img class="tablist-icon" src="./assets/img/tensorflow_icon.png" height="20"> <span class="tablist-text">TensorFlow</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_tensorflow" data-toggle="tab" role="tab"
+													aria-selected="false"><img class="tablist-icon tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/tensorflow_icon.png" alt=""> <span
+														class="tablist-text">TensorFlow</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_Keras" data-toggle="tab" role="tab" aria-selected="false"><span class="iconify tablist-icon" data-icon="ant-design:code-filled" data-inline="false" height="20" style="color:#CA0003"></span> <span class="tablist-text">Keras</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_Keras" data-toggle="tab" role="tab"
+													aria-selected="false"><span class="iconify tablist-icon  tablist-icon-h20"
+														data-icon="ant-design:code-filled" data-inline="false" style="color:#CA0003"></span> <span
+														class="tablist-text">Keras</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_MXNet" data-toggle="tab" role="tab" aria-selected="false"><img class="tablist-icon" src="./assets/img/mxnet-icon.png" height="20"> <span class="tablist-text">MXNet</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_MXNet" data-toggle="tab" role="tab"
+													aria-selected="false"><img class="tablist-icon  tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/mxnet-icon.png" alt="">
+													<span class="tablist-text">MXNet</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_ScikitLearn" data-toggle="tab" role="tab" aria-selected="false"><img class="tablist-icon" src="./assets/img/favicon-sklearn.ico" height="20"> <span class="tablist-text">Scikit-Learn</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_ScikitLearn" data-toggle="tab" role="tab"
+													aria-selected="false"><img class="tablist-icon  tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/favicon-sklearn.ico" alt=""> <span
+														class="tablist-text">Scikit-Learn</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_XGBoost" data-toggle="tab" role="tab" aria-selected="false"> <img class="tablist-icon" src="./assets/img/xgboost-logo.png" height="20" alt="XGBoost"> </a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_XGBoost" data-toggle="tab" role="tab"
+													aria-selected="false"> <img class="tablist-icon tablist-icon-h20 b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="./assets/img/xgboost-logo.png" alt="XGBoost"> </a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_LightGBM" data-toggle="tab" role="tab" aria-selected="false"><span class="iconify tablist-icon" data-icon="ant-design:code-outlined" data-inline="false" height="20"></span> <span class="tablist-text">LightGBM</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_LightGBM" data-toggle="tab" role="tab"
+													aria-selected="false"><span class="iconify tablist-icon tablist-icon-h20"
+														data-icon="ant-design:code-outlined" data-inline="false"></span> <span
+														class="tablist-text">LightGBM</span></a>
 											</li>
-											<li class="nav-item">
-												<a class="nav-link nav-link-narrow" href="#code_other" data-toggle="tab" role="tab" aria-selected="false"><span class="iconify tablist-icon" data-icon="ant-design:code-filled" data-inline="false" height="20"></span> <span class="tablist-text">Other</span></a>
+											<li class="nav-item" role="presentation">
+												<a class="nav-link nav-link-narrow" href="#code_other" data-toggle="tab" role="tab"
+													aria-selected="false"><span class="iconify tablist-icon  tablist-icon-h20"
+														data-icon="ant-design:code-filled" data-inline="false"></span> <span
+														class="tablist-text">Other</span></a>
 											</li>
 										</ul>
 									</div>
@@ -195,12 +292,15 @@
 									<div class="tab-pane active" id="code_quickstart" role="tabpanel">
 										<div class="row">
 											<div class="col-md-12">
-												<p class="space-top text-left" style="padding-top:0px;">
+												<div class="space-top text-left" style="padding-top:0px;">
 													<p class="space-top" style="margin-top:0px;">A simple optimization problem:</p>
 													<ol>
-														<li>Define  <code>objective</code> function to be optimized. Let's minimize <code>(x - 2)^2</code></li>
-														<li>Suggest hyperparameter values using <code>trial</code> object.  Here, a float value of <code>x</code> is suggested from <code>-10</code> to  <code>10</code></li>
-														<li>Create a <code>study</code> object and invoke the <code>optimize</code> method over 100 trials</li>
+														<li>Define <code>objective</code> function to be optimized. Let's minimize <code>(x -
+																2)^2</code></li>
+														<li>Suggest hyperparameter values using <code>trial</code> object. Here, a float value of
+															<code>x</code> is suggested from <code>-10</code> to <code>10</code></li>
+														<li>Create a <code>study</code> object and invoke the <code>optimize</code> method over 100
+															trials</li>
 													</ol>
 													<pre><code class="language-python">import optuna
 
@@ -213,22 +313,30 @@ study.optimize(objective, n_trials=100)
 
 study.best_params  # E.g. {'x': 2.002108042}</code></pre>
 													<p class="space-top" style="margin-top:0px;">
-														<a href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'quickstart-colab'});"><img src="https://colab.research.google.com/assets/colab-badge.svg" width="150px" /></a></p>
-													</p>
+														<a href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
+															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'quickstart-colab'});">
+															<span style="position:absolute;z-index:-1;opacity:0;">colab.research.google</span>
+															<img class="b-lazy"
+																src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+																data-src="https://colab.research.google.com/assets/colab-badge.svg" style="width:150px"
+																alt="">
+														</a></p>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_PyTorch" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize PyTorch hyperparameters, such as the number of layers and the number of hidden nodes in each layer, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import torch
+									</div>
+									<div class="tab-pane" id="code_PyTorch" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize PyTorch hyperparameters, such as the number of layers and the number of
+													hidden nodes in each layer, in three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import torch
 
 import optuna
 
@@ -254,22 +362,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/pytorch_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'pytorch-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/pytorch_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'pytorch-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_chainer" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize Chainer hyperparameters, such as the number of layers and the number of hidden nodes in each layer, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import chainer
+									</div>
+									<div class="tab-pane" id="code_chainer" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize Chainer hyperparameters, such as the number of layers and the number of
+													hidden nodes in each layer, in three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import chainer
 
 import optuna
 
@@ -293,22 +410,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/chainer_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'chainer-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/chainer_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'chainer-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_tensorflow" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize TensorFlow hyperparameters, such as the number of layers and the number of hidden nodes in each layer, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import tensorflow as tf
+									</div>
+									<div class="tab-pane" id="code_tensorflow" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize TensorFlow hyperparameters, such as the number of layers and the number of
+													hidden nodes in each layer, in three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import tensorflow as tf
 
 import optuna
 
@@ -329,22 +455,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/tensorflow_eager_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tensorflow-eager-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/tensorflow_eager_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tensorflow-eager-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_Keras" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize Keras hyperparameters, such as the number of filters and kernel size, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import keras
+									</div>
+									<div class="tab-pane" id="code_Keras" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize Keras hyperparameters, such as the number of filters and kernel size, in
+													three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import keras
 
 import optuna
 
@@ -371,22 +506,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/keras_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'keras-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/keras_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'keras-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_MXNet" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize MXNet hyperparameters, such as the number of layers and the number of hidden nodes in each layer, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import mxnet as mx
+									</div>
+									<div class="tab-pane" id="code_MXNet" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize MXNet hyperparameters, such as the number of layers and the number of hidden
+													nodes in each layer, in three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import mxnet as mx
 
 import optuna
 
@@ -411,22 +555,32 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/mxnet_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'mxnet-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/mxnet_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'mxnet-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_ScikitLearn" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize Scikit-Learn hyperparameters, such as the <code>C</code> parameter of <code>SVC</code> and the <code>max_depth</code> of the <code>RandomForestClassifier</code>, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import sklearn
+									</div>
+									<div class="tab-pane" id="code_ScikitLearn" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize Scikit-Learn hyperparameters, such as the <code>C</code> parameter of
+													<code>SVC</code> and the <code>max_depth</code> of the <code>RandomForestClassifier</code>, in
+													three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import sklearn
 
 import optuna
 
@@ -447,22 +601,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/sklearn_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'sklearn-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/sklearn_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'sklearn-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_XGBoost" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize XGBoost hyperparameters, such as the booster type and alpha, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import xgboost as xgb
+									</div>
+									<div class="tab-pane" id="code_XGBoost" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize XGBoost hyperparameters, such as the booster type and alpha, in three
+													steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import xgboost as xgb
 
 import optuna
 
@@ -486,22 +649,31 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/xgboost_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'xgboost-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/xgboost_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'xgboost-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_LightGBM" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														You can optimize LightGBM hyperparameters, such as boosting type and the number of leaves, in three steps:<br/>
-														<ol>
-															<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
-															<li>Suggest hyperparameters using a <code>trial</code> object</li>
-															<li>Create a <code>study</code> object and execute the optimization</li>
-														</ol>
-														<pre><code class="language-python">import lightgbm as lgb
+									</div>
+									<div class="tab-pane" id="code_LightGBM" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													You can optimize LightGBM hyperparameters, such as boosting type and the number of leaves, in
+													three steps:<br />
+													<ol>
+														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
+														<li>Suggest hyperparameters using a <code>trial</code> object</li>
+														<li>Create a <code>study</code> object and execute the optimization</li>
+													</ol>
+													<pre><code class="language-python">import lightgbm as lgb
 
 import optuna
 
@@ -531,40 +703,62 @@ def objective(trial):
 # 3. Create a study object and optimize the objective function.
 study = optuna.create_study(direction='maximize')
 study.optimize(objective, n_trials=100)</code></pre>
-														<a href="https://github.com/optuna/optuna/blob/master/examples/lightgbm_simple.py" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'lightgbm-example'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See full example on Github</button></a>
-													</p>
+													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+														href="https://github.com/optuna/optuna/blob/master/examples/lightgbm_simple.py"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'lightgbm-example'});">
+														<img class="b-lazy"
+															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+														full
+														example on Github
+													</a>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane" id="code_other" role="tabpanel">
-											<div class="row">
-												<div class="col-md-12">
-													<p class="space-top text-left" style="padding-top:0px;">
-														Check more examples including PyTorch Ignite, Dask-ML and MLFlow at our Github repository.<br/>
-														It also provides the visualization demo as follows:
-														<pre>
+									</div>
+									<div class="tab-pane" id="code_other" role="tabpanel">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="space-top text-left" style="padding-top:0px;">
+													Check more examples including PyTorch Ignite, Dask-ML and MLFlow at our Github
+													repository.<br />
+													It also provides the visualization demo as follows:
+													<pre>
 <code class="language-python">from optuna.visualization import plot_intermediate_values
 
 ...
 plot_intermediate_values(study)</code></pre>
-														<div class="text-center">
-															<img src="assets/img/intermediate-values-graph.png" width="60%" class="card-top-shadow text-center">
-														</div>
-													</p>
-												<a href="https://github.com/optuna/optuna/tree/master/examples" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'more-examples'});"><button class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> See more examples on Github</button></a>
+													<div class="text-center">
+														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+															data-src="assets/img/intermediate-values-graph.png" style="width:60%"
+															class="card-top-shadow text-center b-lazy" alt="">
+													</div>
+												</div>
+												<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+													href="https://github.com/optuna/optuna/tree/master/examples"
+													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'more-examples'});">
+													<img class="b-lazy"
+														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+														data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
+													more
+													examples
+													on Github
+												</a>
 											</div>
 										</div>
 									</div>
 
-								</div>  <!-- end of tab-content-->
-							</div>  <!-- end of profile-tabs -->
-						</div>  <!-- end of col -->
+								</div> <!-- end of tab-content-->
+							</div> <!-- end of profile-tabs -->
+						</div> <!-- end of col -->
 
-					</div>  <!-- end of row -->
+					</div> <!-- end of row -->
 
 					<div class="row">
 						<div class="col-md-12 ml-auto mr-auto">
-							<h2 class="text-center" id="installation" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Installation</h2>
+							<h2 class="text-center" id="installation"
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+								Installation</h2>
 							<div class="row">
 								<div class="col-md-9 ml-auto mr-auto">
 									<p class="text-left" style="padding-top:0px;">
@@ -573,168 +767,302 @@ plot_intermediate_values(study)</code></pre>
 									<p class="text-center">
 										<pre><code class="language-bash">% pip install optuna</code></pre>
 									</p>
-									<a href="https://optuna.readthedocs.io/en/stable/installation.html" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'installation'});"><button class="btn btn-ligtht" style="margin-top:10px; padding:5px 10px; font-size:15px;"><img src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff"> Details</button></a>
+									<a class="btn btn-ligtht" style="margin-top:10px; padding:5px 10px; font-size:15px;"
+										href="https://optuna.readthedocs.io/en/stable/installation.html"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'installation'});">
+										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt="">
+										Details
+									</a>
 								</div>
 							</div>
 						</div>
-					</div>  <!-- end of row -->
+					</div> <!-- end of row -->
 
-				<!-- external links (top) -->
-				<ul id="icons-links" class="text-center" style="margin-top:60px;">
-					<a href="https://github.com/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-middle'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff"> Github<div class="ripple-container"></div></button></a>
-					<a href="https://optuna.readthedocs.io/en/stable/tutorial/index.html" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-middle'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/code.svg?size=30&color=ffffff"> Tutorials<div class="ripple-container"></div></button></a>
-					<a href="https://twitter.com/OptunaAutoML" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-middle'});"><button class="btn btn-primary"><img src="./assets/img/twitter-logo-circle.svg" height="30"> Twitter<div class="ripple-container"></div></button></a>
-					<a href="https://gitter.im/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-middle'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff"> Gitter<div class="ripple-container"></div></button></a>
-				</ul>
-				<div class="row" style="margin-top:0px;">
-					<div class="col-md-12 ml-auto mr-auto">
-						<div class="row">
-							<div class="col-md-12 ml-auto mr-auto text-center">
-								<h2 id="blog" class="text-center" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">News</h2>
-								<div class="row">
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We are pleased to announce Optuna will participate in the Google Summer of Code 2020! We are looking for students with passion to improve hyperparameter optimization together. Check out project ideas here: <a href="https://t.co/AujDvmyBf1">https://t.co/AujDvmyBf1</a> <a href="https://twitter.com/hashtag/gsoc?src=hash&amp;ref_src=twsrc%5Etfw" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">#gsoc</a></p>&mdash; OptunaAutoML (@OptunaAutoML) <a href="https://twitter.com/OptunaAutoML/status/1235453126406066182?ref_src=twsrc%5Etfw" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">March 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-									</div>
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Released <a href="https://twitter.com/hashtag/Optuna?src=hash&amp;ref_src=twsrc%5Etfw" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">#Optuna</a> v1.2.0! New features including queuing of trials with user specified predetermined parameter values and an experimental grid search sampler. A bug in one of our parameter suggestion APIs was fixed. <a href="https://t.co/hi3uHWGLPE" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">https://t.co/hi3uHWGLPE</a></p>&mdash; OptunaAutoML (@OptunaAutoML) <a href="https://twitter.com/OptunaAutoML/status/1235446413531557888?ref_src=twsrc%5Etfw" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">March 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<!-- external links (top) -->
+					<ul role="list" class="social-links d-flex justify-content-center flex-wrap" style="margin-top:60px;">
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://github.com/optuna/optuna"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-middle'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+								Github<div class="ripple-container"></div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-middle'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt=""> Tutorials
+								<div class="ripple-container"></div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-middle'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
+									class="ripple-container">
+								</div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-middle'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter<div
+									class="ripple-container"></div>
+							</a>
+						</li>
+					</ul>
+
+					<div class="row" style="margin-top:0px;">
+						<div class="col-md-12 ml-auto mr-auto">
+							<div class="row">
+								<div class="col-md-12 ml-auto mr-auto text-center">
+									<h2 id="news" class="text-center"
+										style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+										News</h2>
+									<div class="row">
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<blockquote class="twitter-tweet">
+												<p lang="en" dir="ltr">We are pleased to announce Optuna will participate in the Google Summer
+													of Code 2020! We are looking for students with passion to improve hyperparameter optimization
+													together. Check out project ideas here: <a
+														href="https://t.co/AujDvmyBf1">https://t.co/AujDvmyBf1</a> <a
+														href="https://twitter.com/hashtag/gsoc?src=hash&amp;ref_src=twsrc%5Etfw"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">#gsoc</a>
+												</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
+													href="https://twitter.com/OptunaAutoML/status/1235453126406066182?ref_src=twsrc%5Etfw"
+													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">March
+													5, 2020</a>
+											</blockquote>
+										</div>
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<blockquote class="twitter-tweet">
+												<p lang="en" dir="ltr">Released <a
+														href="https://twitter.com/hashtag/Optuna?src=hash&amp;ref_src=twsrc%5Etfw"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">#Optuna</a>
+													v1.2.0! New features including queuing of trials with user specified predetermined parameter
+													values and an experimental grid search sampler. A bug in one of our parameter suggestion APIs
+													was fixed. <a href="https://t.co/hi3uHWGLPE"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">https://t.co/hi3uHWGLPE</a>
+												</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
+													href="https://twitter.com/OptunaAutoML/status/1235446413531557888?ref_src=twsrc%5Etfw"
+													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">March
+													5, 2020</a>
+											</blockquote>
+											<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="row" style="margin-top:0px;">
-					<div class="col-md-12 ml-auto mr-auto">
-						<div class="row">
-							<div class="col-md-12 ml-auto mr-auto text-center">
-								<h2 id="blog" class="text-center" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Blog</h2>
-								<div class="row">
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<a href="https://medium.com/optuna/optuna-v1-86192cd09be5"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-v1'});">
-											<img src="assets/img/optuna-blog-v1-560x315.png" alt="Announcing Optuna 1.0" class="card-top-shadow" style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
-									</div>
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<a href="https://medium.com/optuna/lightgbm-tuner-new-optuna-integration-for-hyperparameter-optimization-8b7095e99258"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-lightgbm-tuner'});">
-											<img src="assets/img/optuna-blog-lightgbm-tuner-560x315.png" alt="LightGBM Tuner: New Optuna Integration for Hyperparameter Optimization" class="card-top-shadow" style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12 ml-auto mr-auto text-center">
-								<div class="row">
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<a href="https://medium.com/optuna/optuna-supports-hyperband-93b0cae1a137"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-hyperband'});">
-											<img src="assets/img/optuna-blog-hyperband-560x315.png" alt="How We Implement Hyperband in Optuna" class="card-top-shadow" style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
-									</div>
-									<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-										<a href="https://medium.com/optuna/kurobako-a2e3f7b760c7"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-kurobako'});">
-											<img src="assets/img/optuna-blog-kurobako-560x315.png" alt="Introduction to Kurobako: A Benchmark Tool for Hyperparameter Optimization Algorithms" class="card-top-shadow" style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
+					<div class="row" style="margin-top:0px;">
+						<div class="col-md-12 ml-auto mr-auto">
+							<div class="row">
+								<div class="col-md-12 ml-auto mr-auto text-center">
+									<h2 id="blog" class="text-center"
+										style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+										Blog</h2>
+									<div class="row">
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<a href="https://medium.com/optuna/optuna-v1-86192cd09be5"
+												onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-v1'});">
+												<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="assets/img/optuna-blog-v1-560x315.png" alt="Announcing Optuna 1.0"
+													class="card-top-shadow b-lazy"
+													style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
+										</div>
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<a href="https://medium.com/optuna/lightgbm-tuner-new-optuna-integration-for-hyperparameter-optimization-8b7095e99258"
+												onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-lightgbm-tuner'});">
+												<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="assets/img/optuna-blog-lightgbm-tuner-560x315.png"
+													alt="LightGBM Tuner: New Optuna Integration for Hyperparameter Optimization"
+													class="card-top-shadow b-lazy"
+													style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
-						<h2 id="video" class="text-center" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Videos</h2>
-						<div class="row" style="margin-top:0px;">
-							<div class="col-md-6 ml-auto mr-auto text-center youtube">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/J_aymk4YXhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="row">
+								<div class="col-md-12 ml-auto mr-auto text-center">
+									<div class="row">
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<a href="https://medium.com/optuna/optuna-supports-hyperband-93b0cae1a137"
+												onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-hyperband'});">
+												<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="assets/img/optuna-blog-hyperband-560x315.png"
+													alt="How We Implement Hyperband in Optuna" class="card-top-shadow b-lazy"
+													style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
+										</div>
+										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+											<a href="https://medium.com/optuna/kurobako-a2e3f7b760c7"
+												onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'blog-kurobako'});">
+												<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+													data-src="assets/img/optuna-blog-kurobako-560x315.png"
+													alt="Introduction to Kurobako: A Benchmark Tool for Hyperparameter Optimization Algorithms"
+													class="card-top-shadow b-lazy"
+													style="width: 560px; height: auto; max-width:100%; max-height:100%;"></a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="col-md-6 ml-auto mr-auto text-center youtube">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/-UeC4MR3PHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							<h2 id="video" class="text-center"
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Videos
+							</h2>
+							<div class="row" style="margin-top:0px;">
+								<div class="col-md-6 ml-auto mr-auto text-center youtube">
+									<iframe width="560" height="315" class="b-lazy" data-src="https://www.youtube.com/embed/J_aymk4YXhg"
+										title="Video 1"></iframe>
+								</div>
+								<div class="col-md-6 ml-auto mr-auto text-center youtube">
+									<iframe width="560" height="315" class="b-lazy" data-src="https://www.youtube.com/embed/-UeC4MR3PHM"
+										title="Video 2"></iframe>
+								</div>
 							</div>
-						</div>
 
 
-						<div class="row" style="margin-top:0px;">
-							<div class="col-md-12 ml-auto mr-auto text-center">
-								<h2 id="paper" class="text-center" style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Paper</h2>
-								<p class="text-left">If you use Optuna in a scientific publication, please use the following citation:</p>
-<pre class="prettyprint_pub" style="margin-top:0px; margin-bottom:10px;">Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta,and Masanori Koyama. 2019.
+							<div class="row" style="margin-top:0px;">
+								<div class="col-md-12 ml-auto mr-auto text-center">
+									<h2 id="paper" class="text-center"
+										style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+										Paper</h2>
+									<p class="text-left">If you use Optuna in a scientific publication, please use the following citation:
+									</p>
+									<pre class="prettyprint_pub" style="margin-top:0px; margin-bottom:10px;">Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta,and Masanori Koyama. 2019.
 Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 
-								<a href="https://dl.acm.org/citation.cfm?id=3330701" class="btn btn-default btn-round" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'view-paper'});">View Paper</a>
-								<a href="https://arxiv.org/abs/1907.10902" class="btn btn-default btn-round" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'view-preprint'});">View Preprint</a>
-								<p class="text-left" style="margin-top:10px;">Bibtex entry:</p>
-<pre class="prettyprint_pub" style="margin-top:0px; margin-bottom:0px;">@inproceedings{optuna_2019,
+									<a href="https://dl.acm.org/citation.cfm?id=3330701" class="btn btn-default btn-round"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'view-paper'});">View
+										Paper</a>
+									<a href="https://arxiv.org/abs/1907.10902" class="btn btn-default btn-round"
+										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'view-preprint'});">View
+										Preprint</a>
+									<p class="text-left" style="margin-top:10px;">Bibtex entry:</p>
+									<pre class="prettyprint_pub" style="margin-top:0px; margin-bottom:0px;">@inproceedings{optuna_2019,
     title={Optuna: A Next-generation Hyperparameter Optimization Framework},
     author={Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori}
     booktitle={Proceedings of the 25rd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining},
     year={2019}
 }</pre>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<ul id="icons-links" class="text-center" style="margin-top:60px;">
-					<a href="https://github.com/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-bottom'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff"> Github<div class="ripple-container"></div></button></a>
-					<a href="https://optuna.readthedocs.io/en/stable/tutorial/index.html" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-bottom'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/code.svg?size=30&color=ffffff"> Tutorials<div class="ripple-container"></div></button></a>
-					<a href="https://twitter.com/OptunaAutoML" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-bottom'});"><button class="btn btn-primary"><img src="./assets/img/twitter-logo-circle.svg" height="30"> Twitter<div class="ripple-container"></div></button></a>
-					<a href="https://gitter.im/optuna/optuna" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-bottom'});"><button class="btn btn-primary"><img src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff"> Gitter<div class="ripple-container"></div></button></a>
-				</ul>
 
-				</div>  <!-- end of container -->
-			</div>  <!-- end of section -->
-		</div>  <!-- end of main -->
-	</div>  <!-- end of wrapper -->
+					<ul role="list" class="social-links d-flex justify-content-center flex-wrap" style="margin-top:60px;">
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://github.com/optuna/optuna"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-bottom'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+								Github<div class="ripple-container"></div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-bottom'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt=""> Tutorials
+								<div class="ripple-container"></div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-bottom'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
+									class="ripple-container">
+								</div>
+							</a>
+						</li>
+						<li role="listitem">
+							<a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-bottom'});">
+								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+									data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter<div
+									class="ripple-container"></div>
+							</a>
+						</li>
+					</ul>
+
+				</div> <!-- end of container -->
+			</div> <!-- end of section -->
+		</div> <!-- end of main -->
+	</div> <!-- end of wrapper -->
 	<footer class="footer footer-black">
 		<div class="container">
 			<div class="row" style="padding: 50px 0px 50px 0px;">
 				<nav class="footer-nav">
 					<ul>
-						<li><a href="https://www.preferred-networks.jp/en/" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'pfn-footer'});">Preferred Networks, Inc.</a></li>
-						<li><a href="https://optuna.org/privacy" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'privacy-footer'});">Privacy Policy.</a></li>
+						<li><a href="https://www.preferred-networks.jp/en/"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'pfn-footer'});">Preferred
+								Networks, Inc.</a></li>
+						<li><a href="https://optuna.org/privacy"
+								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'privacy-footer'});">Privacy
+								Policy.</a></li>
 					</ul>
 				</nav>
 				<div class="credits ml-auto">
 					<span class="copyright">
-© 2018 Preferred Networks, Inc. All rights reserved.
-<br> TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.
-<br> Scikit-learn is distributed under <a href="https://github.com/scikit-learn/scikit-learn/blob/master/COPYING" onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'sklearn-license-footer'});">the new BSD license</a>.
-<br> <a href="https://mxnet.apache.org/"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'mxnet-footer'});">Apache MXNet</a> and the MXNet logo are either registered trademarks or trademarks of <br>the <a href="http://apache.org/"  onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'asf-footer'});">Apache Software Foundation</a> in the United States and/or other countries.
-<br> | Design: © 2017 Creative Tim
+						© 2017-<span class="copyright-year"></span> Preferred Networks, Inc. All rights reserved.
+						<br> TensorFlow, the TensorFlow logo and any related marks are trademarks of Google Inc.
+						<br> Scikit-learn is distributed under <a
+							href="https://github.com/scikit-learn/scikit-learn/blob/master/COPYING"
+							onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'sklearn-license-footer'});">the
+							new BSD license</a>.
+						<br> <a href="https://mxnet.apache.org/"
+							onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'mxnet-footer'});">Apache
+							MXNet</a> and the MXNet logo are either registered trademarks or trademarks of <br>the <a
+							href="http://apache.org/"
+							onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'asf-footer'});">Apache
+							Software Foundation</a> in the United States and/or other countries.
+						<br> | Design: © 2017 Creative Tim
 					</span>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-</body>
+	<!-- Core JS Files -->
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script defer src="./assets/js/prism.js"></script>
+	<script defer src="./assets/js/jquery-ui-1.12.1.custom.min.js"></script>
+	<script defer src="./assets/js/popper.min.js"></script>
+	<script defer src="./assets/js/bootstrap.min.js"></script>
 
-<!-- Core JS Files -->
-<script src="./assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="./assets/js/prism.js" type="text/javascript"></script>
-<script src="./assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
-<script src="./assets/js/popper.js" type="text/javascript"></script>
-<script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<!-- Plugin for Switches -->
+	<script defer src="./assets/js/bootstrap-switch.min.js"></script>
 
-<!-- Plugin for Switches -->
-<script src="./assets/js/bootstrap-switch.min.js"></script>
+	<!--  Paper Kit Initialization snd functons -->
+	<script defer src="./assets/js/paper-kit.js?v=2.1.0"></script>
 
-<!--  Paper Kit Initialization snd functons -->
-<script src="./assets/js/paper-kit.js?v=2.1.0"></script>
+	<script defer src="./assets/js/blazy.min.js"></script>
+	<script defer src="./assets/js/scripts.js?v=1.0.01"></script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55135190-8"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'UA-55135190-8');
-</script>
-<script>
-	$(document).ready(function() {
-		let searchParams = new URLSearchParams(window.location.search);
-		if (searchParams.has('code_example')) {
-			let tabName = searchParams.get('code_example');
-			// Activate tab specified by GET params.
-			$('.nav-tabs a[href="#' + tabName + '"]').tab('show');
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55135190-8"></script>
+	<script>
+		if (navigator.userAgent.indexOf("Chrome-Lighthouse") == -1) {
+			window.dataLayer = window.dataLayer || [];
+	
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+	
+			gtag('config', 'UA-55135190-8');
 		}
-	});
-</script>
+	</script> 
 
+	<script async src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+	<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
+</body>
 
 </html>
