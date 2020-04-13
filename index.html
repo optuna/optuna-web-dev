@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/png" href="./assets/img/favicon.ico">
 	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/optuna.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <![endif]-->
@@ -51,8 +52,8 @@
 	<link rel="preconnect" href="https://syndication.twitter.com">
 
 	<link rel="preload" href="https://platform.twitter.com/widgets.js" as="script">
-	<link rel="preload" href="./assets/css/style.min.css?v=1.0.01" as="style">
-	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.01">
+	<link rel="preload" href="./assets/css/style.min.css?v=1.0.04" as="style">
+	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.04">
 </head>
 
 <body>
@@ -87,6 +88,7 @@
 			</div>
 		</div>
 	</nav>
+
 	<div class="wrapper">
 		<div class="page-header page-header-small b-lazy" data-src="assets/img/bg.jpg">
 			<div class="container">
@@ -98,6 +100,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="main">
 			<div class="section" style="padding:0px;">
 				<div class="container">
@@ -106,9 +109,9 @@
 					<div class="row">
 						<div class="col-md-12 ml-auto mr-auto">
 							<h2 class="text-center" id="key_features"
-								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Key
-								Features</h2>
-
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+								Key Features
+							</h2>
 							<div class="row">
 								<div class="col-md-4">
 									<div class="card card-blog card-top-shadow">
@@ -116,10 +119,9 @@
 											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">Eager search
 												spaces</h2>
 											<div class="card-image text-center">
-												<img class="img img-raised b-lazy"
-													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-													data-src="https://icongr.am/fontawesome/expand.svg?color=123692"
-													style="width:17%; margin:5px 0; padding: 5px 0;" alt="">
+												<svg style="margin:5px 0; padding: 5px 0;" width="62" height="62" viewBox="0 0 1792 1792">
+													<use xlink:href="#icon-expand"></use>
+												</svg>
 											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Automated search for optimal hyperparameters using Python conditionals, loops, and syntax
@@ -131,13 +133,14 @@
 								<div class="col-md-4">
 									<div class="card card-blog card-top-shadow">
 										<div class="card-body" style="min-height: 250px;">
-											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">State-of-the-art
-												algorithms</h2>
+											<h2 class="card-category text-center" style="font-weight:bold; font-size: 18px;">
+												State-of-the-art
+												algorithms
+											</h2>
 											<div class="card-image text-center">
-												<img class="img img-raised b-lazy"
-													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-													data-src="https://icongr.am/fontawesome/rocket.svg?color=123692"
-													style="width:17%; margin:5px 0; padding: 5px 0;" alt="">
+												<svg style="margin:5px 0; padding: 5px 0;" width="62" height="62" viewBox="0 0 1792 1792">
+													<use xlink:href="#icon-rocket"></use>
+												</svg>
 											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Efficiently search large spaces and prune unpromising trials for faster results
@@ -154,7 +157,9 @@
 											<div class="card-image text-center">
 												<img class="img img-raised b-lazy"
 													src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-													data-src="./assets/img/large_scale.png" style="width:20%; margin:5px 0;" alt="">
+													data-src="./assets/img/large_scale.png"
+													data-srcset="./assets/img/large_scale@2x.png 2x, ./assets/img/large_scale@3x.png 3x"
+													style="width:20%; margin:5px 0;" alt="">
 											</div>
 											<p class="card-description text-left" style="margin-top:10px;">
 												Parallelize hyperparameter searches over multiple threads or processes without modifying code
@@ -172,37 +177,39 @@
 								<li role="listitem">
 									<a class="btn btn-primary" href="https://github.com/optuna/optuna"
 										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':  'github-top'});">
-										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+										<svg viewBox="0 0 16 16">
+											<use xlink:href="#icon-github">
+										</svg>
 										Github<div class="ripple-container"></div>
 									</a>
 								</li>
 								<li role="listitem"><a class="btn btn-primary"
 										href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
 										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-top'});">
-										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt="">
+										<svg viewBox="0 0 14 16">
+											<use xlink:href="#icon-code">
+										</svg>
 										Tutorials<div class="ripple-container"></div>
 									</a>
 								</li>
 								<li role="listitem"><a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
 										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-top'});">
-										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
-											class="ripple-container">
+										<svg viewBox="0 0 512 512">
+											<use xlink:href="#icon-twitter">
+										</svg> Twitter<div class="ripple-container">
 										</div>
 									</a>
 								</li>
 								<li role="listitem"><a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
 										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'gitter-top'});">
-										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter
+										<svg viewBox="0 0 16 16">
+											<use xlink:href="#icon-comment">
+										</svg> Gitter
 										<div class="ripple-container"></div>
 									</a>
 								</li>
 							</ul>
 						</div>
-
 					</div> <!-- end of row -->
 
 					<!-- Code Examples -->
@@ -313,13 +320,44 @@ study.optimize(objective, n_trials=100)
 
 study.best_params  # E.g. {'x': 2.002108042}</code></pre>
 													<p class="space-top" style="margin-top:0px;">
-														<a href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
+														<a class="d-inline-flex" href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
 															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'quickstart-colab'});">
-															<span style="position:absolute;z-index:-1;opacity:0;">colab.research.google</span>
-															<img class="b-lazy"
-																src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-																data-src="https://colab.research.google.com/assets/colab-badge.svg" style="width:150px"
-																alt="">
+															<span class="sr-only">colab.research.google</span>
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+																width="150" height="26">
+																<linearGradient id="b" x2="0" y2="100%">
+																	<stop offset="0" stop-color="#bbb" stop-opacity=".1" />
+																	<stop offset="1" stop-opacity=".1" />
+																</linearGradient>
+																<clipPath id="a">
+																	<rect width="117" height="20" rx="3" fill="#fff" />
+																</clipPath>
+																<g clip-path="url(#a)">
+																	<path fill="#555" d="M0 0h30v20H0z" />
+																	<path fill="#007ec6" d="M30 0h87v20H30z" />
+																	<path fill="url(#b)" d="M0 0h117v20H0z" />
+																</g>
+																<g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif"
+																	font-size="110">
+																	<svg x="4px" y="0px" width="22px" height="20px" viewBox="-2 0 28 24"
+																		style="background-color: #fff;border-radius: 1px;">
+																		<path style="fill:#ef9008;"
+																			d="M1.977,16.77c-2.667-2.277-2.605-7.079,0-9.357C2.919,8.057,3.522,9.075,4.49,9.691c-1.152,1.6-1.146,3.201-0.004,4.803C3.522,15.111,2.918,16.126,1.977,16.77z" />
+																		<path style="fill:#fdba18;"
+																			d="M12.257,17.114c-1.767-1.633-2.485-3.658-2.118-6.02c0.451-2.91,2.139-4.893,4.946-5.678c2.565-0.718,4.964-0.217,6.878,1.819c-0.884,0.743-1.707,1.547-2.434,2.446C18.488,8.827,17.319,8.435,16,8.856c-2.404,0.767-3.046,3.241-1.494,5.644c-0.241,0.275-0.493,0.541-0.721,0.826C13.295,15.939,12.511,16.3,12.257,17.114z" />
+																		<path style="fill:#ef9008;"
+																			d="M19.529,9.682c0.727-0.899,1.55-1.703,2.434-2.446c2.703,2.783,2.701,7.031-0.005,9.764c-2.648,2.674-6.936,2.725-9.701,0.115c0.254-0.814,1.038-1.175,1.528-1.788c0.228-0.285,0.48-0.552,0.721-0.826c1.053,0.916,2.254,1.268,3.6,0.83C20.502,14.551,21.151,11.927,19.529,9.682z" />
+																		<path style="fill:#fdba18;"
+																			d="M4.49,9.691C3.522,9.075,2.919,8.057,1.977,7.413c2.209-2.398,5.721-2.942,8.476-1.355c0.555,0.32,0.719,0.606,0.285,1.128c-0.157,0.188-0.258,0.422-0.391,0.631c-0.299,0.47-0.509,1.067-0.929,1.371C8.933,9.539,8.523,8.847,8.021,8.746C6.673,8.475,5.509,8.787,4.49,9.691z" />
+																		<path style="fill:#fdba18;"
+																			d="M1.977,16.77c0.941-0.644,1.545-1.659,2.509-2.277c1.373,1.152,2.85,1.433,4.45,0.499c0.332-0.194,0.503-0.088,0.673,0.19c0.386,0.635,0.753,1.285,1.181,1.89c0.34,0.48,0.222,0.715-0.253,1.006C7.84,19.73,4.205,19.188,1.977,16.77z" />
+																	</svg>
+																	<text x="245" y="140" transform="scale(.1)" textLength="30"></text>
+																	<text x="725" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)"
+																		textLength="770">Open in Colab</text>
+																	<text x="725" y="140" transform="scale(.1)" textLength="770">Open in Colab</text>
+																</g>
+															</svg>
 														</a></p>
 												</div>
 											</div>
@@ -365,11 +403,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/pytorch_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'pytorch-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -413,11 +447,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/chainer_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'chainer-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -458,11 +488,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/tensorflow_eager_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tensorflow-eager-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -509,11 +535,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/keras_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'keras-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -558,11 +580,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/mxnet_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'mxnet-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -604,11 +622,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/sklearn_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'sklearn-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -652,11 +666,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/xgboost_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'xgboost-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -706,11 +716,7 @@ study.optimize(objective, n_trials=100)</code></pre>
 													<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 														href="https://github.com/optuna/optuna/blob/master/examples/lightgbm_simple.py"
 														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'lightgbm-example'});">
-														<img class="b-lazy"
-															src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-														full
-														example on Github
+														<span class="btn-icon"></span> See full example on Github
 													</a>
 												</div>
 											</div>
@@ -730,19 +736,15 @@ study.optimize(objective, n_trials=100)</code></pre>
 plot_intermediate_values(study)</code></pre>
 													<div class="text-center">
 														<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-															data-src="assets/img/intermediate-values-graph.png" style="width:60%"
+															data-src="assets/img/intermediate-values-graph.png"
+															data-srcset="assets/img/intermediate-values-graph@2x.png 2x" style="width:60%"
 															class="card-top-shadow text-center b-lazy" alt="">
 													</div>
 												</div>
 												<a class="btn btn-light" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 													href="https://github.com/optuna/optuna/tree/master/examples"
 													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'more-examples'});">
-													<img class="b-lazy"
-														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-														data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt=""> See
-													more
-													examples
-													on Github
+													<span class="btn-icon"></span> See full example on Github
 												</a>
 											</div>
 										</div>
@@ -764,14 +766,13 @@ plot_intermediate_values(study)</code></pre>
 									<p class="text-left" style="padding-top:0px;">
 										Optuna can be installed with pip. Python 3.5 or newer is supported.<br>
 									</p>
-									<p class="text-center">
+									<div class="text-center">
 										<pre><code class="language-bash">% pip install optuna</code></pre>
-									</p>
+									</div>
 									<a class="btn btn-ligtht" style="margin-top:10px; padding:5px 10px; font-size:15px;"
 										href="https://optuna.readthedocs.io/en/stable/installation.html"
 										onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'installation'});">
-										<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-											data-src="https://icongr.am/octicons/chevron-right.svg?size=15&color=ffffff" alt="">
+										<span class="btn-icon"></span>
 										Details
 									</a>
 								</div>
@@ -784,34 +785,36 @@ plot_intermediate_values(study)</code></pre>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://github.com/optuna/optuna"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-middle'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+								<svg viewBox="0 0 16 16">
+									<use xlink:href="#icon-github">
+								</svg>
 								Github<div class="ripple-container"></div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-middle'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt=""> Tutorials
+								<svg viewBox="0 0 14 16">
+									<use xlink:href="#icon-code">
+								</svg> Tutorials
 								<div class="ripple-container"></div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-middle'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
-									class="ripple-container">
+								<svg viewBox="0 0 512 512">
+									<use xlink:href="#icon-twitter">
+								</svg> Twitter<div class="ripple-container">
 								</div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-middle'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter<div
-									class="ripple-container"></div>
+								<svg viewBox="0 0 16 16">
+									<use xlink:href="#icon-comment">
+								</svg> Gitter<div class="ripple-container"></div>
 							</a>
 						</li>
 					</ul>
@@ -913,7 +916,8 @@ plot_intermediate_values(study)</code></pre>
 							</div>
 
 							<h2 id="video" class="text-center"
-								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">Videos
+								style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+								Videos
 							</h2>
 							<div class="row" style="margin-top:0px;">
 								<div class="col-md-6 ml-auto mr-auto text-center youtube">
@@ -925,7 +929,6 @@ plot_intermediate_values(study)</code></pre>
 										title="Video 2"></iframe>
 								</div>
 							</div>
-
 
 							<div class="row" style="margin-top:0px;">
 								<div class="col-md-12 ml-auto mr-auto text-center">
@@ -959,34 +962,36 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://github.com/optuna/optuna"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'github-bottom'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/mark-github.svg?size=30&color=ffffff" alt="">
+								<svg viewBox="0 0 16 16">
+									<use xlink:href="#icon-github">
+								</svg>
 								Github<div class="ripple-container"></div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://optuna.readthedocs.io/en/stable/tutorial/index.html"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'tutorials-bottom'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/code.svg?size=30&color=ffffff" alt=""> Tutorials
+								<svg viewBox="0 0 14 16">
+									<use xlink:href="#icon-code">
+								</svg> Tutorials
 								<div class="ripple-container"></div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://twitter.com/OptunaAutoML"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-bottom'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="./assets/img/twitter-logo-circle.svg" height="30" alt=""> Twitter<div
-									class="ripple-container">
+								<svg viewBox="0 0 512 512">
+									<use xlink:href="#icon-twitter">
+								</svg> Twitter<div class="ripple-container">
 								</div>
 							</a>
 						</li>
 						<li role="listitem">
 							<a class="btn btn-primary" href="https://gitter.im/optuna/optuna"
 								onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'gitter-bottom'});">
-								<img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-									data-src="https://icongr.am/octicons/comment-discussion.svg?size=30&color=ffffff" alt=""> Gitter<div
-									class="ripple-container"></div>
+								<svg viewBox="0 0 16 16">
+									<use xlink:href="#icon-comment">
+								</svg> Gitter<div class="ripple-container"></div>
 							</a>
 						</li>
 					</ul>
@@ -995,6 +1000,7 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 			</div> <!-- end of section -->
 		</div> <!-- end of main -->
 	</div> <!-- end of wrapper -->
+
 	<footer class="footer footer-black">
 		<div class="container">
 			<div class="row" style="padding: 50px 0px 50px 0px;">
@@ -1029,36 +1035,59 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 		</div>
 	</footer>
 
+	<!-- svg sprites -->
+	<svg style="display:none;" version="1.1" height="0" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink">
+		<symbol id="icon-expand" viewBox="0 0 1792 1792">
+			<path fill="#123692"
+				d="M883 1056q0 13-10 23l-332 332 144 144q19 19 19 45t-19 45-45 19h-448q-26 0-45-19t-19-45v-448q0-26 19-45t45-19 45 19l144 144 332-332q10-10 23-10t23 10l114 114q10 10 10 23zm781-864v448q0 26-19 45t-45 19-45-19l-144-144-332 332q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l332-332-144-144q-19-19-19-45t19-45 45-19h448q26 0 45 19t19 45z" />
+		</symbol>
+		<symbol id="icon-rocket" viewBox="0 0 1792 1792">
+			<path fill="#123692"
+				d="M1504 448q0-40-28-68t-68-28-68 28-28 68 28 68 68 28 68-28 28-68zm224-288q0 249-75.5 430.5t-253.5 360.5q-81 80-195 176l-20 379q-2 16-16 26l-384 224q-7 4-16 4-12 0-23-9l-64-64q-13-14-8-32l85-276-281-281-276 85q-3 1-9 1-14 0-23-9l-64-64q-17-19-5-39l224-384q10-14 26-16l379-20q96-114 176-195 188-187 358-258t431-71q14 0 24 9.5t10 22.5z" />
+		</symbol>
+		<symbol id="icon-github" viewBox="0 0 16 16">
+			<path fill="currentColor" fill-rule="evenodd"
+				d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+		</symbol>
+		<symbol id="icon-code" viewBox="0 0 14 16">
+			<path fill="currentColor" fill-rule="evenodd"
+				d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z" />
+		</symbol>
+		<symbol id="icon-twitter" viewBox="0 0 512 512">
+			<path fill="currentColor"
+				d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0" />
+		</symbol>
+		<symbol id="icon-comment" viewBox="0 0 16 16">
+			<path fill="currentColor" fill-rule="evenodd"
+				d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z" />
+		</symbol>
+	</svg>
+	<!-- svg sprites -->
+
 	<!-- Core JS Files -->
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script defer src="./assets/js/prism.js"></script>
-	<script defer src="./assets/js/jquery-ui-1.12.1.custom.min.js"></script>
-	<script defer src="./assets/js/popper.min.js"></script>
-	<script defer src="./assets/js/bootstrap.min.js"></script>
-
-	<!-- Plugin for Switches -->
-	<script defer src="./assets/js/bootstrap-switch.min.js"></script>
-
-	<!--  Paper Kit Initialization snd functons -->
-	<script defer src="./assets/js/paper-kit.js?v=2.1.0"></script>
-
+	<script defer src="./assets/js/paper-kit.min.js?v=2.1.0"></script>
 	<script defer src="./assets/js/blazy.min.js"></script>
-	<script defer src="./assets/js/scripts.js?v=1.0.01"></script>
+	<script defer src="./assets/js/scripts.js?v=1.0.04"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55135190-8"></script>
 	<script>
 		if (navigator.userAgent.indexOf("Chrome-Lighthouse") == -1) {
 			window.dataLayer = window.dataLayer || [];
-	
+
 			function gtag() {
 				dataLayer.push(arguments);
 			}
 			gtag('js', new Date());
-	
+
 			gtag('config', 'UA-55135190-8');
 		}
-	</script> 
+	</script>
 
 	<script async src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 	<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>

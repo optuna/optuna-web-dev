@@ -39,4 +39,11 @@
     $('.nav-tabs a[href="#' + tabName + '"]').tab('show');
   }
 
+
+  $('.profile-tabs .nav-link').on('click', function(){
+    setTimeout(function () {
+      bLazy.revalidate();
+    }, 100);
+  });
+
 })();
