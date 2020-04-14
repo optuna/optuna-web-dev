@@ -52,8 +52,8 @@
 	<link rel="preconnect" href="https://syndication.twitter.com">
 
 	<link rel="preload" href="https://platform.twitter.com/widgets.js" as="script">
-	<link rel="preload" href="./assets/css/style.min.css?v=1.0.04" as="style">
-	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.04">
+	<link rel="preload" href="./assets/css/style.min.css?v=1.0.06" as="style">
+	<link rel="stylesheet" href="./assets/css/style.min.css?v=1.0.06">
 </head>
 
 <body>
@@ -243,15 +243,17 @@
 												<a class="nav-link nav-link-narrow" href="#code_chainer" data-toggle="tab" role="tab"
 													aria-selected="false"><img class="tablist-icon tablist-icon-h20 b-lazy"
 														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-														data-src="./assets/img/chainer_icon_red.png" alt=""> <span
-														class="tablist-text">Chainer</span></a>
+														data-src="./assets/img/chainer_icon_red.png"
+														data-srcset="./assets/img/chainer_icon_red@2x.png 2x, ./assets/img/chainer_icon_red@3x.png 3x"
+														alt=""> <span class="tablist-text">Chainer</span></a>
 											</li>
 											<li class="nav-item" role="presentation">
 												<a class="nav-link nav-link-narrow" href="#code_tensorflow" data-toggle="tab" role="tab"
 													aria-selected="false"><img class="tablist-icon tablist-icon-h20 b-lazy"
 														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-														data-src="./assets/img/tensorflow_icon.png" alt=""> <span
-														class="tablist-text">TensorFlow</span></a>
+														data-src="./assets/img/tensorflow_icon.png"
+														data-srcset="./assets/img/tensorflow_icon@2x.png 2x, ./assets/img/tensorflow_icon@3x.png 3x"
+														alt=""> <span class="tablist-text">TensorFlow</span></a>
 											</li>
 											<li class="nav-item" role="presentation">
 												<a class="nav-link nav-link-narrow" href="#code_Keras" data-toggle="tab" role="tab"
@@ -263,7 +265,8 @@
 												<a class="nav-link nav-link-narrow" href="#code_MXNet" data-toggle="tab" role="tab"
 													aria-selected="false"><img class="tablist-icon  tablist-icon-h20 b-lazy"
 														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-														data-src="./assets/img/mxnet-icon.png" alt="">
+														data-src="./assets/img/mxnet-icon.png"
+														data-srcset="./assets/img/mxnet-icon@2x.png 2x, ./assets/img/mxnet-icon@3x.png 3x" alt="">
 													<span class="tablist-text">MXNet</span></a>
 											</li>
 											<li class="nav-item" role="presentation">
@@ -277,7 +280,9 @@
 												<a class="nav-link nav-link-narrow" href="#code_XGBoost" data-toggle="tab" role="tab"
 													aria-selected="false"> <img class="tablist-icon tablist-icon-h20 b-lazy"
 														src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-														data-src="./assets/img/xgboost-logo.png" alt="XGBoost"> </a>
+														data-src="./assets/img/xgboost-logo.png"
+														data-srcset="./assets/img/xgboost-logo@2x.png 2x, ./assets/img/xgboost-logo@3x.png 3x"
+														alt="XGBoost"> </a>
 											</li>
 											<li class="nav-item" role="presentation">
 												<a class="nav-link nav-link-narrow" href="#code_LightGBM" data-toggle="tab" role="tab"
@@ -320,7 +325,8 @@ study.optimize(objective, n_trials=100)
 
 study.best_params  # E.g. {'x': 2.002108042}</code></pre>
 													<p class="space-top" style="margin-top:0px;">
-														<a class="d-inline-flex" href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
+														<a class="d-inline-flex"
+															href="http://colab.research.google.com/github/optuna/optuna/blob/master/examples/quickstart.ipynb"
 															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label':'quickstart-colab'});">
 															<span class="sr-only">colab.research.google</span>
 															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -750,11 +756,12 @@ plot_intermediate_values(study)</code></pre>
 										</div>
 									</div>
 
-								</div> <!-- end of tab-content-->
-							</div> <!-- end of profile-tabs -->
-						</div> <!-- end of col -->
+								</div>
+							</div>
+						</div>
 
-					</div> <!-- end of row -->
+					</div>
+					<!-- Code Examples -->
 
 					<div class="row">
 						<div class="col-md-12 ml-auto mr-auto">
@@ -819,43 +826,46 @@ plot_intermediate_values(study)</code></pre>
 						</li>
 					</ul>
 
-					<div class="row" style="margin-top:0px;">
-						<div class="col-md-12 ml-auto mr-auto">
-							<div class="row">
-								<div class="col-md-12 ml-auto mr-auto text-center">
-									<h2 id="news" class="text-center"
-										style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
-										News</h2>
-									<div class="row">
-										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-											<blockquote class="twitter-tweet">
-												<p lang="en" dir="ltr">We are pleased to announce Optuna will participate in the Google Summer
-													of Code 2020! We are looking for students with passion to improve hyperparameter optimization
-													together. Check out project ideas here: <a
-														href="https://t.co/AujDvmyBf1">https://t.co/AujDvmyBf1</a> <a
-														href="https://twitter.com/hashtag/gsoc?src=hash&amp;ref_src=twsrc%5Etfw"
-														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">#gsoc</a>
-												</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
-													href="https://twitter.com/OptunaAutoML/status/1235453126406066182?ref_src=twsrc%5Etfw"
-													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">March
-													5, 2020</a>
-											</blockquote>
-										</div>
-										<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
-											<blockquote class="twitter-tweet">
-												<p lang="en" dir="ltr">Released <a
-														href="https://twitter.com/hashtag/Optuna?src=hash&amp;ref_src=twsrc%5Etfw"
-														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">#Optuna</a>
-													v1.2.0! New features including queuing of trials with user specified predetermined parameter
-													values and an experimental grid search sampler. A bug in one of our parameter suggestion APIs
-													was fixed. <a href="https://t.co/hi3uHWGLPE"
-														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">https://t.co/hi3uHWGLPE</a>
-												</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
-													href="https://twitter.com/OptunaAutoML/status/1235446413531557888?ref_src=twsrc%5Etfw"
-													onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">March
-													5, 2020</a>
-											</blockquote>
-											<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<div class="news">
+						<div class="row" style="margin-top:0px;">
+							<div class="col-md-12 ml-auto mr-auto">
+								<div class="row">
+									<div class="col-md-12 ml-auto mr-auto text-center">
+										<h2 id="news" class="text-center"
+											style="padding-top:80px; margin-top:-20px; padding-bottom:20px; font-weight:bold; color:#333333;">
+											News</h2>
+										<div class="row">
+											<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+												<blockquote class="twitter-tweet">
+													<p lang="en" dir="ltr">We are pleased to announce Optuna will participate in the Google Summer
+														of Code 2020! We are looking for students with passion to improve hyperparameter
+														optimization
+														together. Check out project ideas here: <a
+															href="https://t.co/AujDvmyBf1">https://t.co/AujDvmyBf1</a> <a
+															href="https://twitter.com/hashtag/gsoc?src=hash&amp;ref_src=twsrc%5Etfw"
+															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">#gsoc</a>
+													</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
+														href="https://twitter.com/OptunaAutoML/status/1235453126406066182?ref_src=twsrc%5Etfw"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-gsoc'});">March
+														5, 2020</a>
+												</blockquote>
+											</div>
+											<div class="col-md-6 ml-auto mr-auto" style="margin-bottom:10px;">
+												<blockquote class="twitter-tweet">
+													<p lang="en" dir="ltr">Released <a
+															href="https://twitter.com/hashtag/Optuna?src=hash&amp;ref_src=twsrc%5Etfw"
+															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">#Optuna</a>
+														v1.2.0! New features including queuing of trials with user specified predetermined parameter
+														values and an experimental grid search sampler. A bug in one of our parameter suggestion
+														APIs
+														was fixed. <a href="https://t.co/hi3uHWGLPE"
+															onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">https://t.co/hi3uHWGLPE</a>
+													</p>&mdash; OptunaAutoML (@OptunaAutoML) <a
+														href="https://twitter.com/OptunaAutoML/status/1235446413531557888?ref_src=twsrc%5Etfw"
+														onClick="gtag('event', 'out', {'event_category': 'index.html','event_label': 'twitter-tweet-v1.2.0'});">March
+														5, 2020</a>
+												</blockquote>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1066,13 +1076,13 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 	<!-- svg sprites -->
 
 	<!-- Core JS Files -->
-	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script defer src="./assets/js/prism.js"></script>
 	<script defer src="./assets/js/paper-kit.min.js?v=2.1.0"></script>
 	<script defer src="./assets/js/blazy.min.js"></script>
-	<script defer src="./assets/js/scripts.js?v=1.0.04"></script>
+	<script defer src="./assets/js/scripts.js?v=1.0.06"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55135190-8"></script>
@@ -1091,6 +1101,17 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 
 	<script async src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 	<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+	<script>
+		/*function loadPlatformTwitter() {
+			let body = document.querySelector('body');
+			let script = document.createElement('script');
+			script.async = true;
+			script.src = 'https://platform.twitter.com/widgets.js';
+			body.appendChild(script);
+		}*/
+		//setTimeout(() => {loadPlatformTwitter();}, 3000);		
+	</script>
 
 </body>
 
