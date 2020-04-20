@@ -25,8 +25,6 @@
    border-left: none;
    border-bottom: none;
    margin-right: 10px;
-   -webkit-transform: rotate(45deg);
-   -ms-transform: rotate(45deg);
    transform: rotate(45deg);
  }
 
@@ -41,3 +39,12 @@
    width: 26px;
    margin-right: 10px;
  }
+
+
+ code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f8f9fa;
+  border-radius: .25rem;
+}

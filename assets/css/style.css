@@ -14342,3 +14342,19 @@ pre[class*="language-"] {
 .b-lazy.b-loaded {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f8f9fa;
+  border-radius: .25rem;
+}

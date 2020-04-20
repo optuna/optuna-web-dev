@@ -7,9 +7,7 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="./assets/img/optuna.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <![endif]-->
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 
 	<title>Optuna - A hyperparameter optimization framework</title>
 	<meta name="description"
@@ -373,8 +371,10 @@ study.best_params  # E.g. {'x': 2.002108042}</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize PyTorch hyperparameters, such as the number of layers and the number of
-													hidden nodes in each layer, in three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize PyTorch hyperparameters, such as the number of layers and the number of
+														hidden nodes in each layer, in three steps:
+													</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -419,8 +419,9 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize Chainer hyperparameters, such as the number of layers and the number of
-													hidden nodes in each layer, in three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize Chainer hyperparameters, such as the number of layers and the number of
+														hidden nodes in each layer, in three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -463,8 +464,9 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize TensorFlow hyperparameters, such as the number of layers and the number of
-													hidden nodes in each layer, in three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize TensorFlow hyperparameters, such as the number of layers and the number of
+														hidden nodes in each layer, in three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -504,8 +506,9 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize Keras hyperparameters, such as the number of filters and kernel size, in
-													three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize Keras hyperparameters, such as the number of filters and kernel size, in
+														three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -551,8 +554,10 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize MXNet hyperparameters, such as the number of layers and the number of hidden
-													nodes in each layer, in three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize MXNet hyperparameters, such as the number of layers and the number of
+														hidden
+														nodes in each layer, in three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -596,9 +601,11 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize Scikit-Learn hyperparameters, such as the <code>C</code> parameter of
-													<code>SVC</code> and the <code>max_depth</code> of the <code>RandomForestClassifier</code>, in
-													three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize Scikit-Learn hyperparameters, such as the <code>C</code> parameter of
+														<code>SVC</code> and the <code>max_depth</code> of the <code>RandomForestClassifier</code>,
+														in
+														three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -638,8 +645,9 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize XGBoost hyperparameters, such as the booster type and alpha, in three
-													steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize XGBoost hyperparameters, such as the booster type and alpha, in three
+														steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -682,8 +690,10 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													You can optimize LightGBM hyperparameters, such as boosting type and the number of leaves, in
-													three steps:<br />
+													<p class="space-top" style="margin-top:0px;">
+														You can optimize LightGBM hyperparameters, such as boosting type and the number of leaves,
+														in
+														three steps:</p>
 													<ol>
 														<li>Wrap model training with an <code>objective</code> function and return accuracy</li>
 														<li>Suggest hyperparameters using a <code>trial</code> object</li>
@@ -732,9 +742,11 @@ study.optimize(objective, n_trials=100)</code></pre>
 										<div class="row">
 											<div class="col-md-12">
 												<div class="space-top text-left" style="padding-top:0px;">
-													Check more examples including PyTorch Ignite, Dask-ML and MLFlow at our Github
-													repository.<br />
-													It also provides the visualization demo as follows:
+													<p class="space-top" style="margin-top:0px;">
+														Check more examples including PyTorch Ignite, Dask-ML and MLFlow at our Github
+														repository.<br />
+														It also provides the visualization demo as follows:
+													</p>
 													<pre>
 <code class="language-python">from optuna.visualization import plot_intermediate_values
 
@@ -932,11 +944,11 @@ plot_intermediate_values(study)</code></pre>
 							<div class="row" style="margin-top:0px;">
 								<div class="col-md-6 ml-auto mr-auto text-center youtube">
 									<iframe width="560" height="315" class="b-lazy" data-src="https://www.youtube.com/embed/J_aymk4YXhg"
-										title="Video 1"></iframe>
+										title="Optuna: A Define by Run Hyperparameter Optimization Framework | SciPy 2019"></iframe>
 								</div>
 								<div class="col-md-6 ml-auto mr-auto text-center youtube">
 									<iframe width="560" height="315" class="b-lazy" data-src="https://www.youtube.com/embed/-UeC4MR3PHM"
-										title="Video 2"></iframe>
+										title="Optuna: A Next Generation Hyperparamter Optimization Framework | KDD2019"></iframe>
 								</div>
 							</div>
 
@@ -1101,17 +1113,6 @@ Optuna: A Next-generation Hyperparameter Optimization Framework. In KDD.</pre>
 
 	<script async src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 	<script async src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-
-	<script>
-		/*function loadPlatformTwitter() {
-			let body = document.querySelector('body');
-			let script = document.createElement('script');
-			script.async = true;
-			script.src = 'https://platform.twitter.com/widgets.js';
-			body.appendChild(script);
-		}*/
-		//setTimeout(() => {loadPlatformTwitter();}, 3000);		
-	</script>
 
 </body>
 
